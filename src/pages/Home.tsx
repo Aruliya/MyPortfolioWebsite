@@ -1,5 +1,3 @@
-import { useRef } from 'react'
-import React, { useState } from 'react'
 import './../App.css'
 import pfp from '../assets/dp.png'
 import l from '../assets/linkedin.svg'
@@ -8,7 +6,7 @@ import git_hub from '../assets/git.svg'
 import codingninjas from '../assets/codingninjas.svg'
 import Clouds from './components/Clouds'
 import {motion} from "framer-motion"
-import { cubicBezier } from "framer-motion"
+// import { cubicBezier } from "framer-motion"
 import ham from "../assets/ham.svg"
 import web from "../assets/web.png"
 
