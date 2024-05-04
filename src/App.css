@@ -43,6 +43,7 @@ body{
 
 .heading{
   font-weight: 500;
+  
 }
 
 .hiButton{
@@ -55,6 +56,11 @@ body{
   align-self: center;
   cursor: pointer;
   font-family: "Raleway", sans-serif;
+}
+
+.hiButton > a{
+  color: white;
+  text-decoration: none;
 }
 
 .sections{
@@ -98,6 +104,8 @@ body{
 .desc{
   width: 40%;
   margin-top: 12%;
+  gap: 
+  
 }
 .arrow{
   padding: 0;
@@ -122,6 +130,7 @@ body{
   color: rgb(13, 3, 58);
   font-size: 50px;
   font-weight: 200;
+  
 }
 
 .img_bg{
@@ -227,7 +236,7 @@ body{
   width: 37em ;
   height: 17em;
   border-radius: 5%;
-  filter:hue-rotate(345deg) opacity(0.8) drop-shadow(5px 5px 5px rgb(50, 117, 174));
+  /* filter:hue-rotate(345deg) opacity(0.8) drop-shadow(5px 5px 5px rgb(50, 117, 174)); */
   /* drop-shadow(9px 9px 11px rgb(44, 42, 42)) */
 }
 
@@ -325,8 +334,10 @@ body{
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: left;
+  text-align: left;
+  padding: 4em;
+
 
 
   /* -webkit-animation:popup 5s linear infinite;
@@ -382,10 +393,11 @@ body{
 .text2{
   
   
-  
-  
-  color: white;
-  font-weight: 800;
+  width: 50%;
+  color: #0066ff;
+  font-size: 1.35em;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;;
 }
 
 
@@ -445,7 +457,7 @@ input{
 
 .f_submit:hover{
   background-color: white ;
-  color: #feac14 ;
+  color: #007bff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -486,6 +498,7 @@ input:focus {
   /* background-color: rebeccapurple; */
   position: absolute;
   margin: auto;
+ 
 }
 
 .formContainer{
