@@ -1,21 +1,18 @@
 // import { useRef } from 'react'
 // import React, { useState } from 'react'
 import './../App.css'
-import pfp from '../assets/ayanoo.png'
+import pfp from '../assets/dp.png'
 import l from '../assets/linkedin.svg'
 import arrow_long from '../assets/arrow.svg'
 import git_hub from '../assets/git.svg'
 import codingninjas from '../assets/codingninjas.svg'
 import Clouds from './components/Clouds'
-
 import {motion} from "framer-motion"
 import { cubicBezier } from "framer-motion"
 import ham from "../assets/ham.svg"
-import work from "../assets/work.svg"
-import webdev from "../assets/webdev.png"
-import webdevp from "../assets/webdevp.png"
 import web from "../assets/web.png"
-import dev from "../assets/dev.png"
+
+
 
 // import emailjs from '@emailjs/browser';
 
@@ -105,7 +102,7 @@ function Home() {
             <div id="home" className="content">
               <div className="desc">
                 <h1 className="heading" >Greetings, I'm </h1><br/>
-                <motion.h1 className="name animate-pop2" variants={variants} initial="initial2" whileInView="animate2" transition={{delay:0.4, duration: 0.3}} viewport={{ once: true }}>Aruliya Asokan</motion.h1><br/>
+                <motion.h1 className="name" variants={variants} initial="initial2" whileInView="animate2" transition={{delay:0.4, duration: 0.3}} viewport={{ once: true }}>Aruliya Asokan</motion.h1><br/>
                 <p>I am a motivated and dedicated individual with a passion for becoming a proficient Full Stack Web Developer. I have a solid foundation in HTML and CSS and am actively expanding my skills in JavaScript through hands-on experience. Additionally, I am familiar with React.js, which adds a dynamic edge to my toolkit. I am eager to contribute to and grow within dynamic development environments.</p>
                 <div className="links">
                   <a href="https://www.linkedin.com/in/aruliya-asokan-1b857724b/" ><img src={l} alt="linkedin_logo" width="20" height="20"/></a>
@@ -121,17 +118,15 @@ function Home() {
 
               <div className="img_bg">
                 <div className="circle1"></div>
-                <motion.img className="pfp animate-pop" src={pfp} alt="Ayanokoji" variants={variants} initial="initial2" whileInView="animate2" transition={{duration: 0.4}} viewport={{ once: true }} />
-                <div className="circle2"></div>
-                <div className="circle3"></div>
-                <div className="circle4"></div>
+                <motion.img className="pfp" src={pfp} alt="profilepic" variants={variants} initial="initial2" whileInView="animate2" transition={{duration: 0.4}} viewport={{ once: true }} />
+                
               </div>
             </div>
           </div>
 
           <section id="section2" className="sec2">
-          <motion.img className="sec2_img animate-pop " src={web} alt="webdev" variants={variants} initial="initial2" whileInView="animate2" transition={{delay:0.001}} viewport={{ once: true }} />
-            <motion.div className="animate-pop2 "  variants={variants} initial="initial2" whileInView="animate2" transition={{delay:0.2}} viewport={{ once: true }} >
+          <motion.img className="sec2_img" src={web} alt="webdev" variants={variants} initial="initial2" whileInView="animate2" transition={{delay:0.001}} viewport={{ once: true }} />
+            <motion.div  variants={variants} initial="initial2" whileInView="animate2" transition={{delay:0.2}} viewport={{ once: true }} >
               <motion.h1 >ABOUT ME</motion.h1><br/>
               <motion.p>A 2nd year student doing B.Tech in Electronics and Communication Engineering at S.R.M. UNIVERSITY, KTR Campus, Chennai.
               </motion.p> <br/> <br/>
