@@ -1,5 +1,5 @@
-// import { useRef } from 'react'
-// import React, { useState } from 'react'
+import { useRef } from 'react'
+import React, { useState } from 'react'
 import './../App.css'
 import pfp from '../assets/dp.png'
 import l from '../assets/linkedin.svg'
@@ -30,7 +30,7 @@ function Home() {
       opacity: 1,
       transition: {
         duration: 0.5,
-        staggerChildren: 0.1,
+        staggerChildren: 0.2,
       },
   
     },
@@ -43,9 +43,10 @@ function Home() {
     animate2: {
       scale: 1,
       opacity: 1,
-      animation: {
-        cubic: cubicBezier(1, 1.8, 0, 0.78),
-      },
+      // transition: {
+      //   ease: [0.68, -0.55, 0.265, 1.55],
+      // },
+      
     },
 
     move: {
@@ -56,28 +57,7 @@ function Home() {
     }
   
   };
-
   
-  // const Contact = () => {
-  //   // const ref = useRef();
-  //   const formRef = useRef();
-  //   const [error, setError] = useState(false)
-  //   const [success, setSuccess] = useState(false)
-
-  //   const sendEmail = (e) => {
-  //     e.preventDefault();
-  
-  //     emailjs.sendForm('service_4slalbq', 'template_5flhp1y', formRef.current, 'eAhkD0lwN9XtEWxOh')
-        
-  //       .then((result) => {
-  //           setSuccess(true)
-  //         }, (error) => {
-  //           setError(true)
-  //         });
-  // };
-
-  
-
   return (
 
     <>
@@ -102,7 +82,7 @@ function Home() {
             <div id="home" className="content">
               <div className="desc">
                 <h1 className="heading" >Greetings, I'm </h1><br/>
-                <motion.h1 className="name" variants={variants} initial="initial2" whileInView="animate2" transition={{delay:0.4, duration: 0.3}} viewport={{ once: true }}>Aruliya Asokan</motion.h1><br/>
+                <motion.h1 className="name" variants={variants} initial="initial2" whileInView="animate2" transition={{delay:0.4, duration: 0.3, ease: [0.68, -0.55, 0.265, 1.55],}} viewport={{ once: true }}>Aruliya Asokan</motion.h1><br/>
                 <p>I am a motivated and dedicated individual with a passion for becoming a proficient Full Stack Web Developer. I have a solid foundation in HTML and CSS and am actively expanding my skills in JavaScript through hands-on experience. Additionally, I am familiar with React.js, which adds a dynamic edge to my toolkit. I am eager to contribute to and grow within dynamic development environments.</p>
                 <div className="links">
                   <a href="https://www.linkedin.com/in/aruliya-asokan-1b857724b/" ><img src={l} alt="linkedin_logo" width="20" height="20"/></a>
@@ -118,7 +98,7 @@ function Home() {
 
               <div className="img_bg">
                 <div className="circle1"></div>
-                <motion.img className="pfp" src={pfp} alt="profilepic" variants={variants} initial="initial2" whileInView="animate2" transition={{duration: 0.4}} viewport={{ once: true }} />
+                <motion.img className="pfp" src={pfp} alt="profilepic" variants={variants} initial="initial2" whileInView="animate2" transition={{duration: 0.4, ease: [0.68, -0.55, 0.265, 1.55],}} viewport={{ once: true }} />
                 
               </div>
             </div>
