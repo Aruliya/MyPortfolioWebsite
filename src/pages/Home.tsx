@@ -230,7 +230,11 @@ function Home() {
             </div>
 
           </section>
+           
+          <section className="sec6">
+          Copyright © 2024 Aruliya /\/ Aruniya Asokan
 
+          </section>
 
         </div>
 
